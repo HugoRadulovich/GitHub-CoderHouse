@@ -1,0 +1,26 @@
+footer {
+    color: $textColorPrimary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    background: $secondaryColor;
+}
+
+.footerImg {
+    display: flex;
+    flex-direction: row;
+    padding:10px;
+}
+
+.zocaloContacto {
+    display: flex;
+    flex-direction: row;
+    
+}
+.zocaloContacto>h4 {
+    margin: 0.7rem;
+    font-weight: 300;
+}

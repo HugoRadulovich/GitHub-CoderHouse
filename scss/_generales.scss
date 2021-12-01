@@ -1,0 +1,39 @@
+*{    
+    margin: 0;
+    padding: 0;
+    font-family: $mainFont; 
+}
+
+body {
+    
+    background-color:$mainColor;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h3{
+    color: #0A4975;
+    font-family: $mainFont;
+    font-weight: 500;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+section p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: $textColorPrimary;
+    font-size: 1.5rem;
+}
+
+.textList {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+

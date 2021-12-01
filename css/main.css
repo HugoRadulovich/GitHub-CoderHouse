@@ -1,0 +1,397 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  background-color: #1D6EA6;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  height: auto;
+  display: flex;
+  flex-direction: column; }
+
+h3 {
+  color: #0A4975;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 3rem; }
+
+section p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 1.5rem; }
+
+.textList {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row; }
+
+nav {
+  background-color: #2D97BE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+nav a img {
+  padding: 20px;
+  width: 200px; }
+
+nav ul li {
+  list-style-type: none;
+  padding: 10px; }
+
+nav ul li a {
+  color: #0A4975;
+  text-decoration: none; }
+
+nav ul li a:hover {
+  color: gray; }
+
+/* Seccion PORQUE ELEGIRNOS*/
+.porqueElegirnos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.containerElegir {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.motivo {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 30px; }
+
+/* ----------------------------------------------------------------------------- */
+/* Seccion SOPORTE */
+/* aplique linear-gradient */
+.soporteMain {
+  display: flex;
+  flex-direction: column;
+  padding: 20px; }
+
+.soporte {
+  background: #0A4975; }
+
+.soporteTelefono {
+  background: linear-gradient(90deg, #020024 0%, #090979 0%, rgba(0, 212, 255, 0.448617) 100%); }
+
+.soporte__telefono--imagen {
+  width: 25%;
+  padding: 20px 20px; }
+
+.soporte__telefono--texto {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500; }
+
+.texto__ayuda--size {
+  font-size: 2rem; }
+
+.texto_llamanos--size {
+  font-size: 1rem; }
+
+.texto__Horario--custom {
+  padding: 20px 20px;
+  font-size: 0.8rem;
+  color: gray; }
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+/* SECCION EMPRESA */
+/* Aplique scale-in-center */
+.empresaTamañoImagen {
+  width: 45%; }
+
+/* BUCLE FOR */
+.empresaTextoSize1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 20px;
+  color: black; }
+
+.empresaTextoSize2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 20px;
+  color: black; }
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+/* SECCION CONTACTO */
+.formContacto {
+  width: 340px;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+  position: relative; }
+
+.formContacto h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c; }
+
+.formContacto input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: 'Montserrat',sans-serif;
+  transition: all .3s;
+  border-bottom: 2px solid #bebed2; }
+
+.formContacto input:focus {
+  border-bottom: 2px solid #78788c; }
+
+.formContacto p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a; }
+
+.formContacto button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: 'Montserrat',sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all .3s; }
+
+.formContacto button:hover {
+  background: #78788c;
+  color: #fff; }
+
+.formContacto div {
+  content: 'Hi';
+  position: absolute;
+  bottom: -45px;
+  right: -20px;
+  background: #50505a;
+  color: #fff;
+  width: 320px;
+  padding: 16px 4px 16px 0;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 10px 10px 40px -14px black; }
+
+.formContacto span {
+  margin: 0 spx 0 15px; }
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* Seccion HAZ TU PEDIDO */
+.formPedido {
+  width: 500px;
+  height: 800px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px black;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
+  position: relative; }
+
+.formPedido h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 180px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+  font-family: 'Roboto',sans-serif; }
+
+.formPedido input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: 'Roboto',sans-serif;
+  transition: all .3s;
+  border-bottom: 2px solid #bebed2;
+  font-size: 14px; }
+
+.formPedido input:focus {
+  border-bottom: 2px solid #78788c; }
+
+.formPedido p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a; }
+
+.tipoPedido {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px; }
+
+.pedidoCiudad {
+  display: flex;
+  flex-direction: row; }
+
+.textoAclaracion {
+  color: #5a5a5a;
+  font-family: 'Rotobo',sans-serif;
+  font-size: 14px; }
+
+.aclaracionPedido {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  font-family: 'Rotobo',sans-serif;
+  font-size: 12px; }
+
+.localidad {
+  width: 60%;
+  border-radius: 8px; }
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.formPedido button {
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: 'Rotobo',sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all .3s; }
+
+.formPedido button:hover {
+  background: #78788c;
+  color: #fff; }
+
+.boton1 {
+  padding: 0 5px; }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+.productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.articulo {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px; }
+
+.articulo img {
+  border-radius: 8px; }
+
+.mainProductos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.card {
+  margin: 1rem;
+  border: #0A4975 solid 1px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #2D97BE; }
+
+.titleProducto {
+  font-size: 1.2rem;
+  margin: 0.5rem; }
+
+.btnProductos {
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  border: solid 2px;
+  color: white;
+  font-size: 20px;
+  margin: 20px 20px;
+  cursor: pointer; }
+
+.one {
+  background-image: linear-gradient(90deg, #020024 0%, #090979 0%, rgba(0, 212, 255, 0.448617) 100%); }
+
+.two {
+  background-image: linear-gradient(90deg, #020024 0%, #090979 0%, rgba(0, 212, 255, 0.448617) 100%); }
+
+.btnProductos:hover {
+  background-color: blue; }
+
+footer {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  background: #2D97BE; }
+
+.footerImg {
+  display: flex;
+  flex-direction: row;
+  padding: 10px; }
+
+.zocaloContacto {
+  display: flex;
+  flex-direction: row; }
+
+.zocaloContacto > h4 {
+  margin: 0.7rem;
+  font-weight: 300; }
